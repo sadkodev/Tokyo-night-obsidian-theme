@@ -1,0 +1,16 @@
+// Importants
+@import 'global/variables';
+@import 'tools/testing';
+@import 'utils/fonts';
+@import 'global/body';
+
+// darkMode
+@import 'global/darkMode';
+@import 'global/ligthMode';
+
+// App view
+@import 'app/views/global';
+@import 'app/config/config';
+
+// App
+@import 'app';

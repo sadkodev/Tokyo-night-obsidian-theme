@@ -1,0 +1,26 @@
+// colors
+$clr-bg: #212122;
+$clr-fg: #fff;
+$clr-default: #d1d1ec;
+
+// colors review
+$clr-editor-text: #a5a5d1;
+
+// fonts
+//! Bug dont's work
+$fonts: (
+  'serif': 'El-Messiri',
+  'sans': 'Open sans',
+  'mono': 'Fira Code',
+);
+
+// size-editor
+$size_editor: (
+  'h1': 2.2rem,
+  'h2': 2rem,
+  'h3': 1.8rem,
+  'h4': 1.5rem,
+  'h5': 1.4rem,
+  'h6': 1.1rem,
+  'p': 1rem,
+);
