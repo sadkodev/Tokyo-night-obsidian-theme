@@ -1,0 +1,32 @@
+em,
+.cm-em {
+  --italic-color: var(--color-cyan);
+  font-weight: 500;
+}
+
+strong,
+.cm-strong {
+  --bold-color: var(--color-yellow);
+}
+
+del,
+.cm-strikethrough {
+  color: var(--color-yellow);
+}
+
+.cm-hashtag.cm-hashtag-end:hover {
+  text-decoration: underline 1px var(--text-normal);
+  text-decoration-thickness: 4px;
+}
+
+a {
+  color: var(--color-red);
+}
+
+ul > li {
+  color: var(--color-green);
+}
+
+ol {
+  list-style-type: upper-roman;
+}
