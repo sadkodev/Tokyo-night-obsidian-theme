@@ -521,4 +521,14 @@ body {
     var(--font-monospace-default);
   --font-text-size: 16px;
   --font-mermaid: var(--font-text);
+  /* Outline-guideline */
+  --outline-guideline-width: var(--size-2-1);
+  --outline-guideline-color: var(--accent-active);
+  --outline-item-height: calc(var(--nav-item-size) * 1.8);
+  /*active color*/
+  --accent-active: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) + 4%)
+  );
 }
