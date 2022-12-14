@@ -1,19 +1,20 @@
-// Importants
-@import 'global/variables';
+// Testing
 @import 'tools/testing';
+
+// Globals
 @import 'utils/fonts';
+@import 'global/variables';
 @import 'global/body';
 
-// darkMode
+// darkMode / lightMode
 @import 'global/darkMode';
 @import 'global/ligthMode';
 
-// App view
-@import 'app/views/global';
-@import 'app/config/config';
+//Config
+@import 'app/config';
 
-// App
-@import 'app';
-
-// Editor
+// Editor / Input
 @import './app/editor/editor';
+
+// Note / output
+@import './app/out/note';

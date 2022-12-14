@@ -1,0 +1,150 @@
+.note:not(.docs) {
+  border-top: 2px solid var(--color-green);
+  opacity: 0.9;
+  transition: opacity var(--anim-duration-fast) ease-in-out;
+
+  &:hover:focus {
+    opacity: 1;
+  }
+
+  // Header note
+  & .frontmatter-container {
+    & .frontmatter-section {
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-end;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--color-base-25);
+
+      & .frontmatter-section-label {
+        display: none;
+      }
+      & .tag:not(.token) {
+        background-color: var(--color-base-40);
+        border: none;
+        color: var(--color-base-25);
+        font-size: 14px;
+        padding: 0.2rem 0.7rem;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+        opacity: 0.8;
+        transition: opacity var(--anim-duration-fast) ease-in-out;
+      }
+      .tag:not(.token):hover {
+        opacity: 1;
+      }
+      .tag[href^='#obsidian'] {
+        background-color: var(--color-purple);
+      }
+      .tag[href^='#important'] {
+        background-color: var(--color-red);
+      }
+      .tag[href^='#complete'] {
+        background-color: var(--color-green);
+      }
+      .tag[href^='#progress'] {
+        background-color: var(--color-orange);
+      }
+      .tag[href^='#todo'] {
+        background-color: var(--color-yellow);
+      }
+    }
+
+    & .frontmatter-container-header {
+      display: none;
+    }
+  }
+
+  & h1 {
+    border-bottom: 1px solid var(--color-base-10);
+    text-align: center;
+    color: var(--color-base-40);
+    font-family: map-get($fonts, 'serif');
+  }
+
+  & p {
+    position: relative;
+
+    &::before {
+      content: ' ';
+      background: var(--color-base-10);
+      width: 0.5px;
+      margin-left: -0.5rem;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  & a:not(.tags) {
+    color: var(--color-yellow);
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid var(--color-yellow);
+    transition: all var(--anim-duration-moderate) ease-in-out;
+
+    &:hover {
+      text-decoration: none;
+      background-color: var(--color-yellow-rgb);
+      color: var(--color-base-10);
+      border-radius: 16px;
+      border: 2px solid var(--color-yellow);
+      padding: 0.2rem 0.5rem;
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+
+    &:is(.has-list-bullet):not(.contains-task-list)::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 80%;
+      left: 19px;
+      top: 10%;
+      background-color: var(--color-base-40);
+    }
+
+    & li {
+      position: relative;
+      color: var(--color-base-50);
+
+      &:is(li, .list-bullet):not(.task-list-item)::after {
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 1px;
+        left: -0.79rem;
+        top: 13px;
+        background-color: var(--color-base-50);
+      }
+    }
+  }
+
+  & ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & mark {
+    color: var(--color-base-10);
+    background: var(--color-green-rgb);
+    font-weight: 600;
+    border-radius: 24px;
+    padding: 0 0.5rem;
+  }
+
+  & em {
+    font-family: map-get($fonts, 'serif');
+    font-style: italic;
+    font-size: 1.1rem;
+    letter-spacing: 0.02rem;
+    color: var(--color-base-40);
+    font-weight: 600;
+  }
+}

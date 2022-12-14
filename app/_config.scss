@@ -95,3 +95,7 @@ body.is-grabbing iframe,
 body.is-grabbing webview {
   pointer-events: none;
 }
+
+iframe {
+  color-scheme: normal;
+}
