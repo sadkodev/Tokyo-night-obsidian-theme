@@ -1,8 +1,8 @@
-$clr-test-red: rgba(255, 0, 0, 0.5);
+$clr-test-red: rgba(255, 0, 0, 0.349);
 $clr-test-orange: rgba(255, 166, 0, 0.5);
 $clr-test-green: rgba(0, 128, 0, 0.5);
 $clr-test-purple: rgba(0, 128, 94, 0.5);
 
 @mixin test($clr: $clr-test-red) {
-  border: 1px dashed $clr;
+  border: 1px solid $clr;
 }

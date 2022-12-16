@@ -5,17 +5,17 @@
 @import 'utils/fonts';
 @import 'global/variables';
 @import 'global/body';
-@import './global/colors';
+@import './global/deg';
 
 // darkMode / lightMode
 @import 'global/darkMode';
 @import 'global/ligthMode';
 
-//Config
-@import 'app/config';
-
 // Editor / Input
 @import './app/editor/editor';
+
+// Workspace
+@import './app/workspace/app_workspace';
 
 // Note / output
 @import './app/out/note';

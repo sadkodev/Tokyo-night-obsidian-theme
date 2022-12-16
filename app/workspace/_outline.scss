@@ -1,0 +1,9 @@
+.HyperMD-list-line {
+  //! Quit the test
+  @include test(rgba(255, 166, 0, 0.267));
+
+  & .cm-formatting {
+    //! Quit the test
+    @include test(yellow);
+  }
+}
