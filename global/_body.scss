@@ -1,10 +1,4 @@
 body {
-  /*
-	List of variables is placed in body rather than :root so 
-	that we can	combine all property types including colors
-	and sort alphabetically to maximize readability in
-	the compiled app.css file.
-	----------------------------------------------------- */
   /* Animations */
   --anim-duration-none: 0;
   --anim-duration-superfast: 70ms;
@@ -533,52 +527,52 @@ body {
   );
 }
 
-@media print {
-  html,
-  body {
-    padding-top: 0 !important;
-    overflow: auto !important;
-    height: auto !important;
-  }
-  iframe,
-  .titlebar,
-  .app-container,
-  .progress-bar,
-  .popover,
-  .markdown-embed-link {
-    display: none !important;
-  }
-  body > :not(.print) {
-    display: none !important;
-  }
-  .print .markdown-preview-view {
-    -webkit-print-color-adjust: exact;
-    color: initial;
-  }
-  .print .markdown-preview-view mark {
-    color: initial;
-  }
-  .print .markdown-preview-view .frontmatter-container {
-    display: none;
-  }
-  .print .markdown-preview-view .markdown-embed-content {
-    max-height: none;
-    overflow: visible;
-  }
-  .print .markdown-preview-view .callout-content {
-    display: inherit !important;
-  }
-  .print .external-link {
-    background: none;
-    padding-right: 0;
-  }
-  * {
-    text-shadow: none !important;
-  }
-  webview {
-    display: none;
-  }
-}
+// @media print {
+//   html,
+//   body {
+//     padding-top: 0 !important;
+//     overflow: auto !important;
+//     height: auto !important;
+//   }
+//   iframe,
+//   .titlebar,
+//   .app-container,
+//   .progress-bar,
+//   .popover,
+//   .markdown-embed-link {
+//     display: none !important;
+//   }
+//   body > :not(.print) {
+//     display: none !important;
+//   }
+//   .print .markdown-preview-view {
+//     -webkit-print-color-adjust: exact;
+//     color: initial;
+//   }
+//   .print .markdown-preview-view mark {
+//     color: initial;
+//   }
+//   .print .markdown-preview-view .frontmatter-container {
+//     display: none;
+//   }
+//   .print .markdown-preview-view .markdown-embed-content {
+//     max-height: none;
+//     overflow: visible;
+//   }
+//   .print .markdown-preview-view .callout-content {
+//     display: inherit !important;
+//   }
+//   .print .external-link {
+//     background: none;
+//     padding-right: 0;
+//   }
+//   * {
+//     text-shadow: none !important;
+//   }
+//   webview {
+//     display: none;
+//   }
+// }
 
 @media print {
   .theme-dark {

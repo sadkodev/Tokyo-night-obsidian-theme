@@ -1,43 +1,45 @@
+// path of fonts-imports
+$font-path: '/sass/assets/fonts/';
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
 @font-face {
   font-family: 'El-Messiri';
   font-weight: normal;
-  src: url('/sass/assets/fonts/messiri-font/ElMessiri-VariableFont_wght.ttf')
+  src: url('#{$font-path}messiri-font/ElMessiri-VariableFont_wght.ttf')
       format(ttf),
-    url('/sass/assets/fonts/messiri-font/static/ElMessiri-Bold.ttf') format(ttf),
-    url('/sass/assets/fonts/messiri-font/static/ElMessiri-Medium.ttf')
-      format(ttf),
-    url('/sass/assets/fonts/messiri-font/static/ElMessiri-Regular.ttf')
-      format(ttf),
-    url('/sass/assets/fonts/messiri-font/static/ElMessiri-SemiBold.ttf')
-      format(ttf);
+    url('#{$font-path}messiri-font/static/ElMessiri-Bold.ttf') format(ttf),
+    url('#{$font-path}messiri-font/static/ElMessiri-Medium.ttf') format(ttf),
+    url('#{$font-path}messiri-font/static/ElMessiri-Regular.ttf') format(ttf),
+    url('#{$font-path}messiri-font/static/ElMessiri-SemiBold.ttf') format(ttf);
 }
 
 @font-face {
   font-family: 'Open-sans';
-  src: url('/sass/assets/fonts/open-sans-font/OpenSans-Italic-VariableFont_width.ttf')
+  src: url('#{$font-path}open-sans-font/OpenSans-Italic-VariableFont_width.ttf')
       format(ttf),
-    url('/sass/assets/fonts/open-sans-font/OpenSans-VariableFont_wdth-wght.ttf')
+    url('#{$font-path}open-sans-font/OpenSans-VariableFont_wdth-wght.ttf')
       format(ttf),
-    url('/sass/assets/fonts/open-sans-font/static/OpenSans/OpenSans-Bold.ttf')
+    url('#{$font-path}open-sans-font/static/OpenSans/OpenSans-Bold.ttf')
       format(ttf),
-    url('/sass/assets/fonts/open-sans-font/static/OpenSans/OpenSans-SemiBoldItalic.ttf')
+    url('#{$font-path}open-sans-font/static/OpenSans/OpenSans-SemiBoldItalic.ttf')
       format(ttf);
 }
 
 @font-face {
   font-family: 'nerd';
-  src: url('/sass/assets/fonts/nerdfonts/3270-Medium\ Nerd\ Font\ Complete.otf')
+  src: url('#{$font-path}nerdfonts/3270-Medium\ Nerd\ Font\ Complete.otf')
       format(otf),
-    url('/sass/assets/fonts/nerdfonts/3270-Medium\ Nerd\ Font\ Complete.ttf')
+    url('#{$font-path}nerdfonts/3270-Medium\ Nerd\ Font\ Complete.ttf')
       format(ttf),
-    url('/sass/assets/fonts/nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Mono.otf')
+    url('#{$font-path}nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Mono.otf')
       format(otf),
-    url('/sass/assets/fonts/nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Mono.ttf')
+    url('#{$font-path}nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Mono.ttf')
       format(ttf),
-    url('/sass/assets/fonts/nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible.otf')
+    url('#{$font-path}nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible.otf')
       format(otf),
-    url('/sass/assets/fonts/nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Windows\ Compatible.ttf')
+    url('#{$font-path}nerdfonts/3270-Medium\ Nerd\ Font\ Complete\ Windows\ Compatible.ttf')
       format(ttf),
-    url('/sass/assets/fonts/nerdfonts/3270\ Narrow\ Nerd\ Font\ Complete.otf')
+    url('#{$font-path}nerdfonts/3270\ Narrow\ Nerd\ Font\ Complete.otf')
       format(otf);
 }

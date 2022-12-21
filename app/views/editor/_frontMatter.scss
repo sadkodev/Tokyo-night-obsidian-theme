@@ -1,0 +1,47 @@
+.frontmatter-container {
+  border-bottom: 0.01rem solid var(--color-base-25);
+  & .frontmatter-section {
+    display: flex;
+    flex-direction: column;
+    // Just watch tags
+    &:not(:nth-child(2)) {
+      display: none;
+    }
+    & .frontmatter-section-label {
+      display: none;
+    }
+    & .tag:not(.token) {
+      background-color: var(--color-base-40);
+      color: var(--color-base-25);
+      font-size: 14px;
+      padding: 0.2rem 0.7rem;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 16px;
+      opacity: 0.8;
+      transition: opacity var(--anim-duration-fast) ease-in-out;
+    }
+    .tag:not(.token):hover {
+      opacity: 1;
+    }
+    .tag[href^='#obsidian'] {
+      background-color: var(--color-purple);
+    }
+    .tag[href^='#important'] {
+      background-color: var(--color-red);
+    }
+    .tag[href^='#complete'] {
+      background-color: var(--color-green);
+    }
+    .tag[href^='#progress'] {
+      background-color: var(--color-blue);
+    }
+    .tag[href^='#todo'] {
+      background-color: var(--color-yellow);
+    }
+  }
+
+  & .frontmatter-container-header {
+    display: none;
+  }
+}
