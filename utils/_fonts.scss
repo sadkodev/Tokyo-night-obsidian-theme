@@ -4,14 +4,8 @@ $font-path: '/sass/assets/fonts/';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 
 @font-face {
-  font-family: 'El-Messiri';
-  font-weight: normal;
-  src: url('#{$font-path}messiri-font/ElMessiri-VariableFont_wght.ttf')
-      format(ttf),
-    url('#{$font-path}messiri-font/static/ElMessiri-Bold.ttf') format(ttf),
-    url('#{$font-path}messiri-font/static/ElMessiri-Medium.ttf') format(ttf),
-    url('#{$font-path}messiri-font/static/ElMessiri-Regular.ttf') format(ttf),
-    url('#{$font-path}messiri-font/static/ElMessiri-SemiBold.ttf') format(ttf);
+  font-family: 'Serif';
+  src: local('Serif'), url('../assets/fonts/messiri-font/static/ElMessiri-Regular.ttf') format(truetype),
 }
 
 @font-face {

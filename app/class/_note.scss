@@ -50,17 +50,53 @@
       }
     }
 
-    & .frontmatter-container-header {
-      display: none;
-    }
-  }
-
+	}
   & h1 {
     border-bottom: 1px solid var(--color-base-10);
-    text-align: center;
     color: var(--color-base-40);
-    font-family: map-get($fonts, 'serif');
+		font-family: 'Serif';
+		font-size: 3rem;
   }
+
+	& h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--color-blue);
+		font-weight: 600;
+		font-size: 1.5rem;
+	}
+
+	& h2 {
+		font-size: 2rem;
+		color: var(--color-purple);
+	}
+
+	& h3 {
+		font-size: 1.8rem;
+		color: var(--color-red);
+	}
+  & h4 {
+		font-size: 1.5rem;
+		color: var(--color-green);
+	}
+	& h5 {
+		font-size: 1.2rem;
+		color: var(--color-pink);
+	}
+  & h6 {
+		font-size: 1.1rem;
+		color: var(--color-orange);
+	}
+
+
+	
+
+	& p::nth-child(1){
+		text-align: right;
+		border-right: 4px solid var(--color-base-10);
+	}
 
   & p {
     position: relative;

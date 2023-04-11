@@ -5,3 +5,16 @@
 
 // FrontMatter
 @import './editor/frontMatter';
+
+.cm-active {
+	background: var(--color-base-10);
+}
+
+.cm-hmd-frontmatter {
+	border-bottom:1px solid var(--color-base-10) ;
+
+}
+.theme-dark .cm-s-obsidian .cm-hmd-frontmatter.cm-def, .theme-dark .cm-s-obsidian .cm-math.cm-def, .theme-dark .cm-s-obsidian pre.HyperMD-codeblock .cm-def {
+	color: var(--color-gray-50);
+}
+
