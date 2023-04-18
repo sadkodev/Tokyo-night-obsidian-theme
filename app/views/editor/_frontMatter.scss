@@ -1,65 +1,67 @@
 .frontmatter-container {
+	border-bottom: 2px solid var(--color-base-10);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
 
 	& .frontmatter-container-header {
 		display: none;
 	}
 
-  & .frontmatter-section {
-		position: relative;
-		display: flex;
-		border-bottom: 4px solid var(--color-base-10);
-		font-size: 1.1rem;
-		padding: 1rem 0;
-		color: var(--color-base-35);
-		font-weight: bold;
-		gap: 1rem;
+	& .frontmatter-section {
+		display: none;
 
-		& .frontmatter-section-label {
-			font-size: 2.5rem;
-			position: absolute;
-			top: -3rem;
-			left: -2rem;
-			color: var(--color-base-30);
+		&:is(.mod-tags) {
+			display: block;
+
+			& .frontmatter-section-label {
+				font-size: 2rem;
+				color: var(--color-base-30);
+			}
+
+			& .tag:not(.token) {
+				position: relative;
+				min-width: 120px;
+				background: var(--color-base-10);
+				border-bottom: 2px solid var(--color-base-40);
+				text-align: center;
+				color: var(--color-base-40);
+				padding: 0.3rem 0.8rem;
+				cursor: pointer;
+				opacity: 0.8;
+				transition: opacity var(--anim-duration-fast) ease-in-out;
+			}
+
+			.tag:not(.token):hover {
+				opacity: 1;
+			}
+
+			.tag[href^='#obsidian'] {
+				border-bottom: 2px solid var(--color-purple);
+			}
+
+			.tag[href^='#important'] {
+				border-bottom: 2px solid var(--color-red);
+			}
+
+			.tag[href^='#complete'] {
+				border-bottom: 2px solid var(--color-green);
+			}
+
+			.tag[href^='#progress'] {
+				border-bottom: 2px solid var(--color-blue);
+			}
+
+			.tag[href^='#todo'] {
+				position: relative;
+				border-bottom: 2px solid var(--color-yellow);
+			}
+
+			&:is(.mod-aliases) {
+				display: block;
+				order: 3;
+			}
 		}
-
-		& .frontmatter-section-tags {
-			gap: 0.5rem;
-		}
-
-    &:not(:nth-child(3)) {
-      display: none;
-    }
-
-    & .tag:not(.token) {
-			min-width: 150px;
-			background: var(--color-base-10);
-			border-bottom: 2px solid var(--color-base-40);
-			text-align: center;
-      color: var(--color-base-40);
-      padding: 0.3rem 0.8rem;
-      cursor: pointer;
-      opacity: 0.8;
-      transition: opacity var(--anim-duration-fast) ease-in-out;
-    }
-    .tag:not(.token):hover {
-      opacity: 1;
-    }
-    .tag[href^='#obsidian'] {
-      border-bottom: 2px solid var(--color-purple);
-    }
-    .tag[href^='#important'] {
-      border-bottom: 2px solid var(--color-red);
-    }
-    .tag[href^='#complete'] {
-      border-bottom: 2px solid var(--color-green);
-    }
-    .tag[href^='#progress'] {
-      border-bottom: 2px solid var(--color-blue);
-    }
-    .tag[href^='#todo'] {
-      border-bottom: 2px solid var(--color-yellow);
-    }
-  }
-
+	}
 }
-
