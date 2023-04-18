@@ -57,11 +57,11 @@
 				position: relative;
 				border-bottom: 2px solid var(--color-yellow);
 			}
+		}
 
-			&:is(.mod-aliases) {
-				display: block;
-				order: 3;
-			}
+		&:is(.mod-aliases) {
+			display: block;
+			order: 3;
 		}
 	}
 }
