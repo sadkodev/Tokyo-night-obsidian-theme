@@ -1,0 +1,44 @@
+.block-language-dataview {
+
+	& .dataview {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+
+		& .table-view-thead {
+
+			& .table-view-tr-header {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				& .table-view-th {
+					flex-grow: 1;
+					background-color: var(--color-base-30);
+					border: 2px solid var(--color-base-20);
+
+					& .small-text {
+						display: inline-block;
+						letter-spacing: 2px;
+					}
+				}
+			}
+		}
+
+		& .table-view-tbody {
+			display: flex;
+			flex-direction: column;
+			@include test(2);
+
+			& tr {
+				@include test(4);
+
+
+				& td {
+					@include test(2);
+				}
+			}
+		}
+	}
+}

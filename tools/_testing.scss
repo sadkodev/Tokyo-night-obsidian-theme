@@ -4,5 +4,6 @@ $clr-test-green: rgba(0, 128, 0, 0.5);
 $clr-test-purple: rgba(0, 128, 94, 0.5);
 
 @mixin test($clr: $clr-test-red) {
-  border: 1px solid $clr;
+	border: 1px solid $clr;
+
 }
