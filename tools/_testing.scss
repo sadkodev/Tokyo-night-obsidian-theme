@@ -3,7 +3,22 @@ $clr-test-orange: rgba(255, 166, 0, 0.5);
 $clr-test-green: rgba(0, 128, 0, 0.5);
 $clr-test-purple: rgba(0, 128, 94, 0.5);
 
-@mixin test($clr: $clr-test-red) {
-	border: 1px solid $clr;
+@mixin test($clr: 1) {
+
+	@if $clr ==1 {
+		border: 1px solid $clr-test-red;
+	}
+
+	@else if $clr ==2 {
+		border: 1px solid $clr-test-orange;
+	}
+
+	@else if $clr ==3 {
+		border: 1px solid $clr-test-green;
+	}
+
+	@else if $clr ==4 {
+		border: 1px solid $clr-test-purple;
+	}
 
 }
