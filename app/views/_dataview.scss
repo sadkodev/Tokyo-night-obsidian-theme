@@ -29,14 +29,18 @@
 		& .table-view-tbody {
 			display: flex;
 			flex-direction: column;
-			@include test(2);
+			justify-content: space-between;
+			@include test(4);
 
 			& tr {
 				@include test(4);
-
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
 
 				& td {
-					@include test(2);
+				@include test(2);
+					min-width: 30%;
 				}
 			}
 		}

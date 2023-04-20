@@ -1,0 +1,9 @@
+textarea,
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
+	background: var(--color-base-10);
+	border-bottom: 1px solid var(--color-base-25);
+}
