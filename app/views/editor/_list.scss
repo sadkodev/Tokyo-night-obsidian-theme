@@ -1,0 +1,59 @@
+.workspace-leaf-content[data-type='outline'] {
+  & .view-content {
+    & .outline {
+      & .tree-item-children {
+        border-left: none;
+      }
+      & .tree-item-icon {
+        cursor: pointer;
+
+        &::before {
+          width: var(--size-4-2);
+          height: var(--size-4-2);
+          background-color: var(--outline-guideline-color);
+          border-radius: 1px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(50%) rotate(45deg);
+        }
+
+        & svg {
+          & path {
+            display: none;
+          }
+        }
+      }
+
+      & .tree-item {
+        position: relative;
+        padding: 0.2rem 1rem;
+
+        &:hover > .tree-item-children > .tree-item:hover::before {
+          content: '';
+          position: absolute;
+          top: calc(var(--outline-item-height) / 2 * -1);
+          left: -14px;
+          bottom: calc(100% - (32px + var(--size-4-2)) / 2 - 1px);
+          width: 32px;
+          border-bottom-left-radius: var(--radius-m);
+          border-bottom: var(--outline-guideline-width) solid
+            var(--outline-guideline-color);
+          border-left: var(--outline-guideline-width) solid
+            var(--outline-guideline-color);
+        }
+      }
+
+      & .tree-item-self {
+        position: relative;
+        white-space: nowrap;
+        padding: 0.2rem 1rem;
+
+        & .tree-item-inner {
+          padding: 0.2rem 1rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
