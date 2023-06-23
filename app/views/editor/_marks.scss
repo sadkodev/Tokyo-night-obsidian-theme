@@ -1,0 +1,33 @@
+/* Tag color in preview & edit mode */
+// .cm-hashtag[class*='cm-hashtag-begin'] {
+//   background-color: $clr-purple !important;
+//   color: $clr-bg !important;
+//   border-radius: 12px 0 0 12px;
+// }
+
+// .cm-hashtag[class*='cm-hashtag-end'] {
+//   background-color: $clr-purple !important;
+//   color: $clr-bg !important;
+//   border-radius: 0 12px 12px 0;
+// }
+
+// .cm-hashtag[class*='cm-tag-important'] {
+//   background-color: $clr-red !important;
+// }
+
+// .tag {
+//   border-radius: 48px !important;
+
+//   &[href^='#obsidian'] {
+//     background-color: $clr-tags-red !important;
+//   }
+// }
+
+mark {
+  background-color: var(--color-yellow) !important;
+  color: var(--color-base-30) !important;
+  font-weight: bold;
+  padding: 0 0.3rem;
+  border-radius: 4px !important;
+  opacity: 0.8;
+}

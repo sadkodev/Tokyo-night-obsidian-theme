@@ -2,10 +2,9 @@
 @import 'tools/testing';
 
 // Globals
-@import 'utils/fonts';
+// @import 'utils/fonts';
 @import 'global/variables';
 @import 'global/body';
-@import './global/deg';
 
 // darkMode / lightMode
 @import 'global/darkMode';
@@ -22,3 +21,4 @@
 // global
 @import './app/views/global';
 @import './app//views/editor/list';
+@import './app/views/editor/marks';
