@@ -1,0 +1,54 @@
+ .kanban-plugin {
+   & .kanban-plugin__board {
+     background-color: var(--color-base-20);
+     border-radius: 0.8rem;
+
+     & .kanban-plugin__lane-wrapper {
+       border-radius: 0.8rem;
+
+       & .kanban-plugin__lane {
+         background-color: var(--color-base-30);
+
+         & .kanban-plugin__lane-header-wrapper {
+           border-bottom: 4px solid var(--color-base-20);
+         }
+
+         & .kanban-plugin__item-form {
+           background-color: var(--color-base-45);
+
+           & .kanban-plugin__item-input-wrapper {
+
+             background-color: var(--color-base-45);
+
+             & .kanban-plugin__grow-wrap {
+               & .kanban-plugin__item-input {
+                 padding: 0.5rem 1rem;
+                 border: 1px solid var(--color-base-35);
+                 border-radius: 2rem;
+               }
+             }
+           }
+         }
+
+         & .kanban-plugin__item-button-wrapper {
+           border-top: 4px solid var(--color-base-20);
+           margin-top: 1rem;
+
+           & .kanban-plugin__new-item-button {
+             text-transform: uppercase;
+             font-weight: bold;
+             background-color: var(--color-base-00);
+             color: var(--color-base-35);
+             border-radius: 2rem;
+             border: 1px solid var(--color-base-35);
+           }
+
+           & .kanban-plugin__item-button-plus {
+             margin-right: 0.5rem;
+             font-size: 1.2rem;
+           }
+         }
+       }
+     }
+   }
+ }
